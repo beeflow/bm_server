@@ -1,0 +1,4 @@
+bm-server-bundle:
+    prefix: /api/v1/items
+    resource: "@BMServerBundle/Controller/ItemController.php"
+    type: annotation

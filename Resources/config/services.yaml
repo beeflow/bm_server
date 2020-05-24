@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  BMServerBundle\Server\:
+    resource: '../../{Controller,Repository,Libs}/*'
+    exclude: '../../{Entity,Tests,BMServerBundle.php}'
+
+  BMServerBundle\Server\Controller\:
+    resource: '../../Controller'
+    tags: ['controller.service_arguments']
